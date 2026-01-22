@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 :root {
-  --ap-primary: #2563eb;
-  --ap-secondary: #7c3aed;
-  --ap-accent: #0ea5e9;
-  --ap-surface: #f8fafc;
+  --ap-primary: #0ea5a4;
+  --ap-secondary: #f97316;
+  --ap-accent: #22c55e;
+  --ap-surface: #f9fafb;
   --ap-card: #ffffff;
-  --ap-hero: #e2e8f0;
+  --ap-hero: #ecfeff;
   --ap-text: #0f172a;
   --ap-muted: #64748b;
   --ap-border: rgba(15, 23, 42, 0.08);
@@ -14,8 +14,8 @@
 
 [data-bs-theme="dark"] {
   --ap-surface: #0b1120;
-  --ap-card: #111827;
-  --ap-hero: #0f172a;
+  --ap-card: #0f172a;
+  --ap-hero: #0b1220;
   --ap-text: #e2e8f0;
   --ap-muted: #94a3b8;
   --ap-border: rgba(148, 163, 184, 0.2);
@@ -38,8 +38,8 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.15), transparent 45%),
-    radial-gradient(circle at top right, rgba(124, 58, 237, 0.2), transparent 45%);
+  background: radial-gradient(circle at top left, rgba(14, 165, 164, 0.18), transparent 45%),
+    radial-gradient(circle at top right, rgba(249, 115, 22, 0.18), transparent 45%);
   background-color: var(--ap-hero);
 }
 
