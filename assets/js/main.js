@@ -28,9 +28,10 @@
   });
 
   const currentPage = document.body?.dataset?.page;
-  if (currentPage) {
+  const resolvedPage = currentPage === "account" ? "dashboard" : currentPage;
+  if (resolvedPage) {
     document.querySelectorAll("[data-nav]").forEach((link) => {
-      if (link.dataset.nav === currentPage) {
+      if (link.dataset.nav === resolvedPage) {
         link.classList.add("active");
         link.setAttribute("aria-current", "page");
       }
