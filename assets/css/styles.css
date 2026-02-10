@@ -31,6 +31,20 @@ body {
   backdrop-filter: blur(8px);
 }
 
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--ap-card);
+    padding: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
+    border-bottom: 1px solid var(--ap-border);
+  }
+}
+
 .navbar-brand span {
   color: var(--ap-primary);
 }
@@ -53,7 +67,7 @@ body {
   opacity: 0.08;
 }
 
-.hero > .container {
+.hero>.container {
   position: relative;
   z-index: 2;
 }
@@ -163,7 +177,8 @@ body {
 
 .timeline-item {
   position: relative;
-  padding-bottom: 1.4rem;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
 }
 
 .timeline-item:last-child {
@@ -189,6 +204,8 @@ body {
 .footer-links a {
   color: inherit;
   text-decoration: none;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .footer-links a:hover {
