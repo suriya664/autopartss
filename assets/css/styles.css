@@ -31,7 +31,17 @@ body {
   backdrop-filter: blur(8px);
 }
 
-@media (max-width: 991.98px) {
+/* Keep navigation items on single line */
+.navbar-nav {
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.navbar-nav .nav-item {
+  white-space: nowrap;
+}
+
+@media (max-width: 1399.98px) {
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -56,9 +66,9 @@ body {
 }
 
 [data-page="dashboard"] .navbar-nav .nav-link {
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   border-radius: 0.375rem;
-  margin: 0.125rem 0;
+  margin: 0.03125rem 0;
   transition: all 0.2s ease;
 }
 
