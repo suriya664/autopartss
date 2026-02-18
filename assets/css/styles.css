@@ -31,14 +31,22 @@ body {
   backdrop-filter: blur(8px);
 }
 
-/* Keep navigation items on single line */
-.navbar-nav {
-  flex-wrap: nowrap;
-  gap: 0.5rem;
-}
 
-.navbar-nav .nav-item {
-  white-space: nowrap;
+
+/* Override Bootstrap default navbar behavior */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row !important;
+  }
+
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
 }
 
 @media (max-width: 1399.98px) {
