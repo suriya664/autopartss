@@ -17,6 +17,30 @@
 </head>
 
 <body data-page="dashboard">
+  <!-- Mobile Navigation -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top d-lg-none">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold" href="index.html">Auto<span>Parts</span> Pro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardNav" aria-controls="dashboardNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="dashboardNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard-orders.html">Orders</a></li>
+          <li class="nav-item"><a class="nav-link active" href="dashboard-vehicles.html">Vehicles</a></li>
+          <li class="nav-item"><a class="nav-link" href="account-profile.html">Account</a></li>
+          <li class="nav-item"><a class="nav-link" href="order-tracking.html">Track Order</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="index.html">Logout</a></li>
+        </ul>
+        <button class="btn btn-outline-secondary btn-sm d-inline-flex align-items-center gap-2" type="button" data-theme-toggle aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars" data-theme-icon></i>
+          <span data-theme-label>Dark</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
   <header class="page-header py-4">
     <div class="container">
       <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-3">
@@ -36,7 +60,8 @@
   <main class="py-5">
     <div class="container">
       <div class="row g-4">
-        <div class="col-lg-3">
+        <!-- Desktop Sidebar -->
+        <div class="col-lg-3 d-none d-lg-block">
           <div class="card-soft p-3">
             <h6 class="text-uppercase text-muted small">Menu</h6>
             <div class="list-group list-group-flush">
