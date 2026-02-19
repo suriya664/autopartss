@@ -31,13 +31,17 @@ body {
   backdrop-filter: blur(8px);
 }
 
+/* Fix navbar alignment for single row - new structure */
 .navbar .container {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .navbar .navbar-brand {
+  flex-shrink: 0;
+  order: 1;
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
@@ -45,13 +49,31 @@ body {
   padding-bottom: 0.25rem;
 }
 
-.navbar .navbar-nav {
+.navbar .d-flex {
   flex-wrap: nowrap;
-  gap: 0.5rem;
+  min-width: 0;
+  flex-shrink: 0;
+  order: 2;
+  align-items: center;
+  gap: 24px;
 }
 
-.navbar .navbar-nav .nav-item {
+.navbar .navbar-collapse {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
   white-space: nowrap;
+  justify-content: center;
+  margin: 0;
+  flex-direction: row !important;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -62,9 +84,14 @@ body {
 
 .navbar .btn {
   border-radius: 0.65rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-
+/* Keep navigation items on single line */
+.navbar-nav .nav-item {
+  white-space: nowrap;
+}
 
 /* Override Bootstrap default navbar behavior */
 @media (min-width: 992px) {
@@ -76,7 +103,7 @@ body {
     gap: 1rem;
     min-width: 0;
   }
-
+  
   .navbar-expand-lg .navbar-nav {
     flex-direction: row !important;
     flex: 1 1 auto;
@@ -85,14 +112,14 @@ body {
     gap: 0.25rem;
     margin: 0 auto !important;
   }
-
+  
   .navbar-expand-lg .navbar-collapse>.d-flex,
   .navbar-expand-lg .navbar-collapse>button {
     margin-left: auto;
     flex-shrink: 0;
     align-items: center;
   }
-
+  
   .navbar-expand-lg .navbar-toggler {
     display: none;
   }
