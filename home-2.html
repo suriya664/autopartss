@@ -1,390 +1,416 @@
 <!doctype html>
 <html lang="en" data-bs-theme="light">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AutoParts Pro | Fleet-Ready Parts Marketplace</title>
-    <meta name="description" content="Streamline parts procurement with fleet-ready pricing, bulk ordering, and live inventory updates.">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
-  </head>
-  <body data-page="home-alt">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
-      <div class="container py-2">
-        <a class="navbar-brand fw-bold" href="index.html">Auto<span>Parts</span> Pro</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" data-nav="home" href="index.html">Home 1</a></li>
-            <li class="nav-item"><a class="nav-link" data-nav="home-alt" href="home-2.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" data-nav="products" href="products.html">Shop</a></li>
-            <li class="nav-item"><a class="nav-link" data-nav="fitment" href="fitment-guide.html">Fitment Guide</a></li>
-            <li class="nav-item"><a class="nav-link" data-nav="track" href="order-tracking.html">Track Order</a></li>
-            <li class="nav-item"><a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a></li>
-          </ul>
-          <div class="d-flex align-items-center gap-2">
-            <a class="btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-2" href="login.html">
-              <i class="bi bi-box-arrow-in-right"></i>
-              <span class="d-none d-md-inline">Sign In</span>
-            </a>
-            <button class="btn btn-outline-secondary btn-sm d-inline-flex align-items-center gap-2" type="button" data-theme-toggle aria-label="Toggle dark mode">
-              <i class="bi bi-moon-stars" data-theme-icon></i>
-              <span data-theme-label>Dark</span>
-            </button>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoParts Pro | Fleet-Ready Parts Marketplace</title>
+  <meta name="description"
+    content="Streamline parts procurement with fleet-ready pricing, bulk ordering, and live inventory updates.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body data-page="home-alt">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold" href="index.html">Auto<span>Parts</span> Pro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" data-nav="home" href="index.html">Home 1</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="home-alt" href="home-2.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="products" href="products.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="fitment" href="fitment-guide.html">Fitment Guide</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="track" href="order-tracking.html">Track Order</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a class="btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-2" href="login.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span class="d-none d-md-inline">Sign In</span>
+          </a>
+          <button class="btn btn-outline-secondary btn-sm d-inline-flex align-items-center gap-2" type="button"
+            data-theme-toggle aria-label="Toggle dark mode">
+            <i class="bi bi-moon-stars" data-theme-icon></i>
+            <span data-theme-label>Dark</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <p class="section-label mb-2">Fleet-ready procurement</p>
+          <h1 class="display-5 fw-bold">Order parts in bulk with instant availability.</h1>
+          <p class="lead text-muted">Centralize purchasing, monitor stock across regions, and keep your technicians
+            moving with live fulfillment updates.</p>
+          <div class="d-flex flex-column flex-sm-row gap-3">
+            <a class="btn btn-primary btn-lg" href="products.html">Browse inventory</a>
+            <a class="btn btn-outline-secondary btn-lg" href="dashboard.html">Open admin panel</a>
+          </div>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <span class="badge-soft"><i class="bi bi-boxes"></i> Bulk pricing</span>
+            <span class="badge-soft"><i class="bi bi-graph-up"></i> Spend analytics</span>
+            <span class="badge-soft"><i class="bi bi-geo-alt"></i> Multi-hub delivery</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="glass-card p-4 rounded-4 shadow-soft">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div>
+                <h5 class="mb-1">Quick reorder</h5>
+                <p class="text-muted small mb-0">Upload a parts list and match SKUs instantly.</p>
+              </div>
+              <i class="bi bi-cloud-arrow-up fs-3 text-primary"></i>
+            </div>
+            <form class="row g-3">
+              <div class="col-12">
+                <label class="form-label">Upload CSV or list</label>
+                <input type="text" class="form-control" placeholder="Paste SKUs or upload file">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Region</label>
+                <select class="form-select">
+                  <option>Pacific Northwest</option>
+                  <option>Southwest</option>
+                  <option>Midwest</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Priority</label>
+                <select class="form-select">
+                  <option>Standard</option>
+                  <option>Express</option>
+                  <option>Overnight</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100">Match inventory</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <header class="hero py-5">
-      <div class="container py-4">
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center mb-4">
+        <div class="col-lg-6">
+          <p class="section-label mb-2">Procurement lanes</p>
+          <h2 class="fw-bold">Build predictable maintenance cycles.</h2>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <a class="btn btn-outline-primary" href="products.html">Shop maintenance kits</a>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card-soft p-4 h-100 text-center">
+            <div class="icon-circle mb-3 mx-auto" style="width: 64px; height: 64px;"><i
+                class="bi bi-wrench-adjustable-circle fs-2"></i></div>
+            <h5>Routine service kits</h5>
+            <p class="text-muted">Oil, filters, and fluids bundled per VIN with auto-reorder reminders.</p>
+            <a href="products.html" class="stretched-link text-decoration-none">Explore kits</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-soft p-4 h-100 text-center">
+            <div class="icon-circle mb-3 mx-auto" style="width: 64px; height: 64px;"><i
+                class="bi bi-lightning-charge fs-2"></i></div>
+            <h5>Electrical essentials</h5>
+            <p class="text-muted">Batteries, alternators, and sensors with predictive stock alerts.</p>
+            <a href="products.html" class="stretched-link text-decoration-none">Shop electrical</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-soft p-4 h-100 text-center">
+            <div class="icon-circle mb-3 mx-auto" style="width: 64px; height: 64px;"><i
+                class="bi bi-shield-check fs-2"></i></div>
+            <h5>Compliance ready</h5>
+            <p class="text-muted">Parts with documentation for inspections and fleet compliance audits.</p>
+            <a href="dashboard.html" class="stretched-link text-decoration-none">View compliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="image-overlay">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80"
+              class="img-fluid rounded-4 shadow-soft" alt="Warehouse fulfillment team">
+            <span class="overlay-badge">24/7 fulfillment monitoring</span>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <p class="section-label mb-2">Service promise</p>
+          <h2 class="fw-bold">Reduce downtime across every location.</h2>
+          <p class="text-muted">Automate replenishment, assign budgets per region, and keep every crew supplied with
+            standardized parts.</p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="stat-card">
+                <h3 class="fw-bold">1.8%</h3>
+                <p class="text-muted mb-0">Return rate</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="stat-card">
+                <h3 class="fw-bold">92%</h3>
+                <p class="text-muted mb-0">Same-day fill rate</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="stat-card">
+                <h3 class="fw-bold">5 mins</h3>
+                <p class="text-muted mb-0">Average reorder time</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="stat-card">
+                <h3 class="fw-bold">18</h3>
+                <p class="text-muted mb-0">Regional hubs</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex gap-3 mt-4">
+            <a class="btn btn-primary" href="dashboard.html">View fleet dashboard</a>
+            <a class="btn btn-outline-secondary" href="order-tracking.html">Track shipments</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <div>
+          <p class="section-label mb-1">New arrivals</p>
+          <h2 class="fw-bold">Latest parts added this week.</h2>
+        </div>
+        <a class="btn btn-outline-primary" href="products.html">View catalog</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card-soft h-100 overflow-hidden product-card">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=800&q=80"
+                class="w-100 rounded-top-4 rounded-bottom-0" alt="Brake pads">
+              <span class="badge-soft position-absolute top-0 start-0 m-3">New</span>
+            </div>
+            <div class="p-4">
+              <p class="text-uppercase text-muted small mb-1">Brake pads</p>
+              <h5 class="mb-2">Ceramic Brake Pads</h5>
+              <p class="text-muted small mb-3">Low dust, high performance compound</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <strong class="fs-5">$74.00</strong>
+                <a class="btn btn-sm btn-primary" href="product-details.html">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-soft h-100 overflow-hidden product-card">
+            <div class="position-relative">
+              <img src="https://tse4.mm.bing.net/th/id/OIP.fQlwwqHWnNBHrWQD4-D4bQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+                class="w-100 rounded-top-4 rounded-bottom-0" alt="Premium oil filter">
+              <span class="badge-soft-success position-absolute top-0 start-0 m-3">In stock</span>
+            </div>
+            <div class="p-4">
+              <p class="text-uppercase text-muted small mb-1">Oil filter</p>
+              <h5 class="mb-2">Premium Oil Filter</h5>
+              <p class="text-muted small mb-3">Extended life media with fast ship</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <strong class="fs-5">$19.00</strong>
+                <a class="btn btn-sm btn-primary" href="product-details.html">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-soft h-100 overflow-hidden product-card">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+                class="w-100 rounded-top-4 rounded-bottom-0" alt="Brake kit">
+              <span class="badge-soft-warning position-absolute top-0 start-0 m-3">Limited</span>
+            </div>
+            <div class="p-4">
+              <p class="text-uppercase text-muted small mb-1">Brake kit</p>
+              <h5 class="mb-2">Performance Brake Kit</h5>
+              <p class="text-muted small mb-3">Fits 2019-2024 sedans</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <strong class="fs-5">$248.00</strong>
+                <a class="btn btn-sm btn-primary" href="product-details.html">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <p class="section-label mb-2">Fleet feedback</p>
+          <h2 class="fw-bold">Operations teams love the visibility.</h2>
+          <p class="text-muted">Centralized ordering keeps technicians stocked while giving finance teams full control.
+          </p>
+          <a class="btn btn-outline-primary" href="dashboard.html">View admin tools</a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="review-card h-100">
+                <p class="mb-3">“We built standard kits for every vehicle type and cut ordering time in half.”</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=120&q=80"
+                    class="rounded-circle" width="44" height="44" alt="Customer portrait">
+                  <div>
+                    <strong>Natalie Wells</strong>
+                    <p class="text-muted small mb-0">Operations Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="review-card h-100">
+                <p class="mb-3">“The reorder workflow and inventory visibility keeps our teams aligned.”</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80"
+                    class="rounded-circle" width="44" height="44" alt="Customer portrait">
+                  <div>
+                    <strong>Jasmin Cole</strong>
+                    <p class="text-muted small mb-0">Fleet Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="review-card h-100">
+                <p class="mb-3">“Net terms and shared carts made multi-location approvals effortless.”</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80"
+                    class="rounded-circle" width="44" height="44" alt="Customer portrait">
+                  <div>
+                    <strong>Renee Jacobs</strong>
+                    <p class="text-muted small mb-0">Purchasing Lead</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="review-card h-100">
+                <p class="mb-3">“We reduced backorders by syncing stock with every repair schedule.”</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80"
+                    class="rounded-circle" width="44" height="44" alt="Customer portrait">
+                  <div>
+                    <strong>Devon Price</strong>
+                    <p class="text-muted small mb-0">Maintenance Supervisor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="card-soft p-4 p-lg-5">
         <div class="row align-items-center g-4">
-          <div class="col-lg-6">
-            <p class="section-label mb-2">Fleet-ready procurement</p>
-            <h1 class="display-5 fw-bold">Order parts in bulk with instant availability.</h1>
-            <p class="lead text-muted">Centralize purchasing, monitor stock across regions, and keep your technicians moving with live fulfillment updates.</p>
-            <div class="d-flex flex-column flex-sm-row gap-3">
-              <a class="btn btn-primary btn-lg" href="products.html">Browse inventory</a>
-              <a class="btn btn-outline-secondary btn-lg" href="dashboard.html">Open admin panel</a>
-            </div>
-            <div class="d-flex flex-wrap gap-3 mt-4">
-              <span class="badge-soft"><i class="bi bi-boxes"></i> Bulk pricing</span>
-              <span class="badge-soft"><i class="bi bi-graph-up"></i> Spend analytics</span>
-              <span class="badge-soft"><i class="bi bi-geo-alt"></i> Multi-hub delivery</span>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="glass-card p-4 rounded-4 shadow-soft">
-              <div class="d-flex align-items-center justify-content-between mb-3">
-                <div>
-                  <h5 class="mb-1">Quick reorder</h5>
-                  <p class="text-muted small mb-0">Upload a parts list and match SKUs instantly.</p>
-                </div>
-                <i class="bi bi-cloud-arrow-up fs-3 text-primary"></i>
-              </div>
-              <form class="row g-3">
-                <div class="col-12">
-                  <label class="form-label">Upload CSV or list</label>
-                  <input type="text" class="form-control" placeholder="Paste SKUs or upload file">
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Region</label>
-                  <select class="form-select">
-                    <option>Pacific Northwest</option>
-                    <option>Southwest</option>
-                    <option>Midwest</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Priority</label>
-                  <select class="form-select">
-                    <option>Standard</option>
-                    <option>Express</option>
-                    <option>Overnight</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary w-100">Match inventory</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="py-5">
-      <div class="container">
-        <div class="row g-4 align-items-center mb-4">
-          <div class="col-lg-6">
-            <p class="section-label mb-2">Procurement lanes</p>
-            <h2 class="fw-bold">Build predictable maintenance cycles.</h2>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <a class="btn btn-outline-primary" href="products.html">Shop maintenance kits</a>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card-soft p-4 h-100">
-              <div class="icon-circle mb-3"><i class="bi bi-wrench-adjustable-circle"></i></div>
-              <h5>Routine service kits</h5>
-              <p class="text-muted">Oil, filters, and fluids bundled per VIN with auto-reorder reminders.</p>
-              <a href="products.html" class="stretched-link text-decoration-none">Explore kits</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-soft p-4 h-100">
-              <div class="icon-circle mb-3"><i class="bi bi-lightning-charge"></i></div>
-              <h5>Electrical essentials</h5>
-              <p class="text-muted">Batteries, alternators, and sensors with predictive stock alerts.</p>
-              <a href="products.html" class="stretched-link text-decoration-none">Shop electrical</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-soft p-4 h-100">
-              <div class="icon-circle mb-3"><i class="bi bi-shield-check"></i></div>
-              <h5>Compliance ready</h5>
-              <p class="text-muted">Parts with documentation for inspections and fleet compliance audits.</p>
-              <a href="dashboard.html" class="stretched-link text-decoration-none">View compliance</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5 bg-body-tertiary">
-      <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div class="image-overlay">
-              <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded-4 shadow-soft" alt="Warehouse fulfillment team">
-              <span class="overlay-badge">24/7 fulfillment monitoring</span>
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <p class="section-label mb-2">Service promise</p>
-            <h2 class="fw-bold">Reduce downtime across every location.</h2>
-            <p class="text-muted">Automate replenishment, assign budgets per region, and keep every crew supplied with standardized parts.</p>
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <div class="stat-card">
-                  <h3 class="fw-bold">1.8%</h3>
-                  <p class="text-muted mb-0">Return rate</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="stat-card">
-                  <h3 class="fw-bold">92%</h3>
-                  <p class="text-muted mb-0">Same-day fill rate</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="stat-card">
-                  <h3 class="fw-bold">5 mins</h3>
-                  <p class="text-muted mb-0">Average reorder time</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="stat-card">
-                  <h3 class="fw-bold">18</h3>
-                  <p class="text-muted mb-0">Regional hubs</p>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex gap-3 mt-4">
-              <a class="btn btn-primary" href="dashboard.html">View fleet dashboard</a>
-              <a class="btn btn-outline-secondary" href="order-tracking.html">Track shipments</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5">
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between mb-4">
-          <div>
-            <p class="section-label mb-1">New arrivals</p>
-            <h2 class="fw-bold">Latest parts added this week.</h2>
-          </div>
-          <a class="btn btn-outline-primary" href="products.html">View catalog</a>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card-soft h-100 overflow-hidden product-card">
-              <div class="position-relative">
-                <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=800&q=80" class="w-100 rounded-top-4 rounded-bottom-0" alt="Brake pads">
-                <span class="badge-soft position-absolute top-0 start-0 m-3">New</span>
-              </div>
-              <div class="p-4">
-                <p class="text-uppercase text-muted small mb-1">Brake pads</p>
-                <h5 class="mb-2">Ceramic Brake Pads</h5>
-                <p class="text-muted small mb-3">Low dust, high performance compound</p>
-                <div class="d-flex align-items-center justify-content-between">
-                  <strong class="fs-5">$74.00</strong>
-                  <a class="btn btn-sm btn-primary" href="product-details.html">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-soft h-100 overflow-hidden product-card">
-              <div class="position-relative">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.fQlwwqHWnNBHrWQD4-D4bQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="w-100 rounded-top-4 rounded-bottom-0" alt="Premium oil filter">
-                <span class="badge-soft-success position-absolute top-0 start-0 m-3">In stock</span>
-              </div>
-              <div class="p-4">
-                <p class="text-uppercase text-muted small mb-1">Oil filter</p>
-                <h5 class="mb-2">Premium Oil Filter</h5>
-                <p class="text-muted small mb-3">Extended life media with fast ship</p>
-                <div class="d-flex align-items-center justify-content-between">
-                  <strong class="fs-5">$19.00</strong>
-                  <a class="btn btn-sm btn-primary" href="product-details.html">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-soft h-100 overflow-hidden product-card">
-              <div class="position-relative">
-                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" class="w-100 rounded-top-4 rounded-bottom-0" alt="Brake kit">
-                <span class="badge-soft-warning position-absolute top-0 start-0 m-3">Limited</span>
-              </div>
-              <div class="p-4">
-                <p class="text-uppercase text-muted small mb-1">Brake kit</p>
-                <h5 class="mb-2">Performance Brake Kit</h5>
-                <p class="text-muted small mb-3">Fits 2019-2024 sedans</p>
-                <div class="d-flex align-items-center justify-content-between">
-                  <strong class="fs-5">$248.00</strong>
-                  <a class="btn btn-sm btn-primary" href="product-details.html">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5 bg-body-tertiary">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-5">
-            <p class="section-label mb-2">Fleet feedback</p>
-            <h2 class="fw-bold">Operations teams love the visibility.</h2>
-            <p class="text-muted">Centralized ordering keeps technicians stocked while giving finance teams full control.</p>
-            <a class="btn btn-outline-primary" href="dashboard.html">View admin tools</a>
-          </div>
           <div class="col-lg-7">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <div class="review-card h-100">
-                  <p class="mb-3">“We built standard kits for every vehicle type and cut ordering time in half.”</p>
-                  <div class="d-flex align-items-center gap-3">
-                    <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=120&q=80" class="rounded-circle" width="44" height="44" alt="Customer portrait">
-                    <div>
-                      <strong>Natalie Wells</strong>
-                      <p class="text-muted small mb-0">Operations Director</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="review-card h-100">
-                  <p class="mb-3">“The reorder workflow and inventory visibility keeps our teams aligned.”</p>
-                  <div class="d-flex align-items-center gap-3">
-                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80" class="rounded-circle" width="44" height="44" alt="Customer portrait">
-                    <div>
-                      <strong>Jasmin Cole</strong>
-                      <p class="text-muted small mb-0">Fleet Manager</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="review-card h-100">
-                  <p class="mb-3">“Net terms and shared carts made multi-location approvals effortless.”</p>
-                  <div class="d-flex align-items-center gap-3">
-                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80" class="rounded-circle" width="44" height="44" alt="Customer portrait">
-                    <div>
-                      <strong>Renee Jacobs</strong>
-                      <p class="text-muted small mb-0">Purchasing Lead</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="review-card h-100">
-                  <p class="mb-3">“We reduced backorders by syncing stock with every repair schedule.”</p>
-                  <div class="d-flex align-items-center gap-3">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" class="rounded-circle" width="44" height="44" alt="Customer portrait">
-                    <div>
-                      <strong>Devon Price</strong>
-                      <p class="text-muted small mb-0">Maintenance Supervisor</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h2 class="fw-bold">Ready to centralize your fleet ordering?</h2>
+            <p class="text-muted mb-0">Create an account to build kits, assign budgets, and unlock volume pricing.</p>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <a class="btn btn-primary btn-lg" href="register.html">Start fleet account</a>
+            <a class="btn btn-outline-secondary btn-lg d-inline-flex align-items-center gap-2 ms-lg-2 mt-2 mt-lg-0"
+              href="login.html">
+              <i class="bi bi-box-arrow-in-right"></i>
+              <span>Sign in</span>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="py-5">
-      <div class="container">
-        <div class="card-soft p-4 p-lg-5">
-          <div class="row align-items-center g-4">
-            <div class="col-lg-7">
-              <h2 class="fw-bold">Ready to centralize your fleet ordering?</h2>
-              <p class="text-muted mb-0">Create an account to build kits, assign budgets, and unlock volume pricing.</p>
-            </div>
-            <div class="col-lg-5 text-lg-end">
-              <a class="btn btn-primary btn-lg" href="register.html">Start fleet account</a>
-              <a class="btn btn-outline-secondary btn-lg d-inline-flex align-items-center gap-2 ms-lg-2 mt-2 mt-lg-0" href="login.html">
-                <i class="bi bi-box-arrow-in-right"></i>
-                <span>Sign in</span>
-              </a>
-            </div>
+  <footer class="border-top mt-5">
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand fw-bold" href="index.html">Auto<span>Parts</span> Pro</a>
+          <p class="text-muted mt-3">Premium auto parts with trusted fitment guidance, proactive tracking, and
+            responsive support.</p>
+          <div class="d-flex gap-2">
+            <a class="btn btn-outline-secondary btn-sm" href="#"><i class="bi bi-instagram"></i></a>
+            <a class="btn btn-outline-secondary btn-sm" href="#"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-outline-secondary btn-sm" href="#"><i class="bi bi-youtube"></i></a>
           </div>
+        </div>
+        <div class="col-6 col-lg-2 footer-links">
+          <h6 class="fw-semibold">Shop</h6>
+          <a href="products.html" class="d-block mb-2">All Parts</a>
+          <a href="product-details.html" class="d-block mb-2">Featured Product</a>
+          <a href="fitment-guide.html" class="d-block mb-2">Fitment Guide</a>
+          <a href="order-tracking.html" class="d-block">Track Order</a>
+        </div>
+        <div class="col-6 col-lg-2 footer-links">
+          <h6 class="fw-semibold">Account</h6>
+          <a href="login.html" class="d-block mb-2">Sign In</a>
+          <a href="register.html" class="d-block mb-2">Register</a>
+          <a href="account-profile.html" class="d-block mb-2">Profile</a>
+          <a href="dashboard.html" class="d-block">Dashboard</a>
+        </div>
+        <div class="col-6 col-lg-2 footer-links">
+          <h6 class="fw-semibold">Company</h6>
+          <a href="#" class="d-block mb-2">About</a>
+          <a href="#" class="d-block mb-2">Careers</a>
+          <a href="#" class="d-block">Support</a>
+        </div>
+        <div class="col-6 col-lg-2 footer-links">
+          <h6 class="fw-semibold">Contact</h6>
+          <a href="#" class="d-block mb-2">hello@autopartspro.com</a>
+          <a href="#" class="d-block mb-2">+1 (555) 010-2211</a>
+          <a href="#" class="d-block">Seattle, WA</a>
         </div>
       </div>
-    </section>
-
-    <footer class="border-top mt-5">
-      <div class="container py-5">
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <a class="navbar-brand fw-bold" href="index.html">Auto<span>Parts</span> Pro</a>
-            <p class="text-muted mt-3">Premium auto parts with trusted fitment guidance, proactive tracking, and responsive support.</p>
-            <div class="d-flex gap-2">
-              <a class="btn btn-outline-secondary btn-sm" href="#"><i class="bi bi-instagram"></i></a>
-              <a class="btn btn-outline-secondary btn-sm" href="#"><i class="bi bi-facebook"></i></a>
-              <a class="btn btn-outline-secondary btn-sm" href="#"><i class="bi bi-youtube"></i></a>
-            </div>
-          </div>
-          <div class="col-6 col-lg-2 footer-links">
-            <h6 class="fw-semibold">Shop</h6>
-            <a href="products.html" class="d-block mb-2">All Parts</a>
-            <a href="product-details.html" class="d-block mb-2">Featured Product</a>
-            <a href="fitment-guide.html" class="d-block mb-2">Fitment Guide</a>
-            <a href="order-tracking.html" class="d-block">Track Order</a>
-          </div>
-          <div class="col-6 col-lg-2 footer-links">
-            <h6 class="fw-semibold">Account</h6>
-            <a href="login.html" class="d-block mb-2">Sign In</a>
-            <a href="register.html" class="d-block mb-2">Register</a>
-            <a href="account-profile.html" class="d-block mb-2">Profile</a>
-            <a href="dashboard.html" class="d-block">Dashboard</a>
-          </div>
-          <div class="col-6 col-lg-2 footer-links">
-            <h6 class="fw-semibold">Company</h6>
-            <a href="#" class="d-block mb-2">About</a>
-            <a href="#" class="d-block mb-2">Careers</a>
-            <a href="#" class="d-block">Support</a>
-          </div>
-          <div class="col-6 col-lg-2 footer-links">
-            <h6 class="fw-semibold">Contact</h6>
-            <a href="#" class="d-block mb-2">hello@autopartspro.com</a>
-            <a href="#" class="d-block mb-2">+1 (555) 010-2211</a>
-            <a href="#" class="d-block">Seattle, WA</a>
-          </div>
-        </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center pt-4 mt-4 border-top">
-          <small class="text-muted">© 2026 AutoParts Pro. All rights reserved.</small>
-          <span class="badge-soft mt-2 mt-md-0"><i class="bi bi-shield-check"></i> Secure checkout</span>
-        </div>
+      <div
+        class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center pt-4 mt-4 border-top">
+        <small class="text-muted">© 2026 AutoParts Pro. All rights reserved.</small>
+        <span class="badge-soft mt-2 mt-md-0"><i class="bi bi-shield-check"></i> Secure checkout</span>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
