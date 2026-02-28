@@ -71,19 +71,135 @@ h6 {
   }
 }
 
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    background: var(--ap-card);
-    padding: 1.25rem;
-    border-radius: 1rem;
-    margin-top: 0.5rem;
-    border: 1px solid var(--ap-border);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+@media (max-width: 1100px) {
+  /* 
+     STRICT OVERRIDE: 
+     Bootstrap 5 expands the navbar at 992px (lg). 
+     We force it to stay in "mobile" (offcanvas) mode up to 1100px.
+  */
+
+  /* 1. Force Toggler Visibility */
+  .navbar.navbar-expand-lg .navbar-toggler {
+    display: block !important;
   }
 
-  .navbar-nav {
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+  /* 2. Force Offcanvas Container to stay a Sidebar */
+  .navbar.navbar-expand-lg .offcanvas {
+    position: fixed !important;
+    bottom: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1045 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    max-width: 100% !important;
+    visibility: hidden !important;
+    background-color: #ffffff !important;
+    background-clip: padding-box !important;
+    outline: 0 !important;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transform: translateX(-100%) !important;
+    width: 320px !important;
+    border-right: 1px solid var(--ap-border) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1) !important;
+    opacity: 1 !important;
+  }
+
+  [data-bs-theme="dark"] .navbar.navbar-expand-lg .offcanvas {
+    background-color: #0f172a !important;
+  }
+
+  .navbar.navbar-expand-lg .offcanvas.show {
+    visibility: visible !important;
+    transform: none !important;
+  }
+
+  /* 3. Revert Offcanvas Header (Bootstrap hides it at 992px) */
+  .navbar.navbar-expand-lg .offcanvas-header {
+    display: flex !important;
+    padding: 1.5rem !important;
+    border-bottom: 1px solid var(--ap-border) !important;
+    background-color: inherit !important;
+  }
+
+  /* 
+     4. Revert Offcanvas Body (CRITICAL FIX)
+     Bootstrap sets padding:0 and overflow:visible at 992px.
+  */
+  .navbar.navbar-expand-lg .offcanvas .offcanvas-body {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    padding: 1.5rem !important;
+    gap: 1.5rem !important;
+    overflow-y: auto !important;
+    background-color: inherit !important;
+    align-items: flex-start !important;
+    /* Force left alignment */
+  }
+
+  /* 5. Force Navigation to stay Vertical and Left-Aligned */
+  .navbar.navbar-expand-lg .navbar-nav {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .navbar.navbar-expand-lg .navbar-nav .nav-item {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .navbar.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0.5rem 0 !important;
+    width: 100% !important;
+    text-align: left !important;
+    display: block !important;
+  }
+
+  /* Ensure bottom action buttons also align left */
+  .navbar.navbar-expand-lg .offcanvas-body .d-flex {
+    justify-content: flex-start !important;
+    width: 100% !important;
+    margin-top: auto !important;
+  }
+
+  /* 6. Fix "Ghosting" brand overlap at 992px+ */
+  .navbar.navbar-expand-lg:has(.offcanvas.show) .navbar-brand {
+    opacity: 0 !important;
+  }
+
+  /* 7. Hide the static desktop nav background that appears at 992px */
+  .navbar.navbar-expand-lg .offcanvas:not(.show) {
+    display: none !important;
+  }
+
+  /* Reset dashboard specific widths */
+  [data-page="dashboard"] .navbar.navbar-expand-lg .offcanvas {
+    width: 280px !important;
+  }
+
+  /* 
+     8. ALIGNMENT PARITY (Global Container Fix)
+     Force ALL containers to use the user-defined '1030px' width
+     even below the 992px breakpoint to eliminate the layout "gap".
+  */
+  .container {
+    max-width: 1030px !important;
+    padding-left: var(--bs-gutter-x, 0.75rem) !important;
+    padding-right: var(--bs-gutter-x, 0.75rem) !important;
+  }
+}
+
+/* Base styles for the offcanvas when it's NOT a custom breakpoint (less than 992px) */
+@media (max-width: 991.98px) {
+
+  /* Force global alignment parity even on smaller tablets */
+  .container {
+    max-width: 1030px;
   }
 }
 

@@ -20,29 +20,35 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
     <div class="container py-2">
       <a class="navbar-brand fw-bold" href="index.html">Auto<span>Parts</span> Pro</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNav"
         aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" data-nav="home" href="index.html">Home 1</a></li>
-          <li class="nav-item"><a class="nav-link" data-nav="home-alt" href="home-2.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" data-nav="products" href="products.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" data-nav="fitment" href="fitment-guide.html">Fitment Guide</a></li>
-          <li class="nav-item"><a class="nav-link" data-nav="track" href="order-tracking.html">Track Order</a></li>
-          <li class="nav-item"><a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a></li>
-        </ul>
-        <div class="d-flex align-items-center gap-2">
-          <a class="btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-2" href="login.html">
-            <i class="bi bi-box-arrow-in-right"></i>
-            <span class="d-none d-md-inline">Sign In</span>
-          </a>
-          <button class="btn btn-outline-secondary btn-sm d-inline-flex align-items-center gap-2" type="button"
-            data-theme-toggle aria-label="Toggle dark mode">
-            <i class="bi bi-moon-stars" data-theme-icon></i>
-            <span data-theme-label>Dark</span>
-          </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="mainNav" aria-labelledby="mainNavLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title fw-bold" id="mainNavLabel">Auto<span>Parts</span> Pro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" data-nav="home" href="index.html">Home 1</a></li>
+            <li class="nav-item"><a class="nav-link" data-nav="home-alt" href="home-2.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-nav="products" href="products.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" data-nav="fitment" href="fitment-guide.html">Fitment Guide</a></li>
+            <li class="nav-item"><a class="nav-link" data-nav="track" href="order-tracking.html">Track Order</a></li>
+            <li class="nav-item"><a class="nav-link" data-nav="dashboard" href="dashboard.html">Dashboard</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <a class="btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-2" href="login.html">
+              <i class="bi bi-box-arrow-in-right"></i>
+              <span>Sign In</span>
+            </a>
+            <button class="btn btn-outline-secondary btn-sm d-inline-flex align-items-center gap-2" type="button"
+              data-theme-toggle aria-label="Toggle dark mode">
+              <i class="bi bi-moon-stars" data-theme-icon></i>
+              <span data-theme-label>Dark</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
