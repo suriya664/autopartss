@@ -44,6 +44,10 @@ h6 {
   color: var(--ap-primary);
 }
 
+.navbar-brand {
+  font-size: 1.25rem;
+}
+
 .navbar .nav-link {
   font-weight: 500;
   color: var(--ap-text);
